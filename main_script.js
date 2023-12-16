@@ -32,16 +32,9 @@ const AddNewContent = ()=>{
    
     addContent = {"name": name, "title": title, "content": content}
 
-    title = ""
-    name = ""
-    image = ""
-    content = ""
-
     fetch("data.json")
         .then((resp) => resp.json())
         .then((json) => {
             json.push(addContent)
         })
-
-    window.open(location.href)
 }
