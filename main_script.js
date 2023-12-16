@@ -35,6 +35,6 @@ const AddNewContent = ()=>{
     fetch("data.json")
         .then((resp) => resp.json())
         .then((json) => {
-            json.push(addContent)
+            fetch("data.json") = json + addContent
         })
 }
